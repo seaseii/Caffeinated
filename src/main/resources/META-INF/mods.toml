@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="All rights reserved"
+
+[[mods]]
+modId="caffeinated"
+version="${file.jarVersion}"
+displayName="Caffeinated"
+logoFile="icon.png"
+credits="Ported by ExDrill"
+authors="Chikorita Lover and ExDrill"
+
+description='''
+A mod adding Coffee!
+'''
+
+[[dependencies.caffeinated]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+# Here's another dependency
+[[dependencies.caffeinated]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
