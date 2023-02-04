@@ -1,5 +1,7 @@
 package com.chikoritalover.caffeinated.core;
 
+import com.chikoritalover.caffeinated.core.misc.ModCauldronInteraction;
+import com.chikoritalover.caffeinated.core.misc.ModCompostables;
 import com.chikoritalover.caffeinated.core.registry.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -33,7 +35,8 @@ public class Caffeinated {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-
+            ModCompostables.register();
+            ModCauldronInteraction.register();
         });
     }
 
