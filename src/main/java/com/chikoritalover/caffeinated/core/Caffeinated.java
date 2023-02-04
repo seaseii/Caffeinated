@@ -1,8 +1,8 @@
 package com.chikoritalover.caffeinated.core;
 
-import com.chikoritalover.caffeinated.core.registry.ModEffects;
-import com.chikoritalover.caffeinated.core.registry.ModParticles;
-import com.chikoritalover.caffeinated.core.registry.ModSounds;
+import com.chikoritalover.caffeinated.core.registry.*;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -20,8 +20,8 @@ public class Caffeinated {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         IEventBus forgeBus = MinecraftForge.EVENT_BUS;
 
-
-
+        ModBlocks.BLOCKS.register(modBus);
+        ModItems.ITEMS.register(modBus);
         ModEffects.MOB_EFFECTS.register(modBus);
         ModSounds.SOUND_EVENTS.register(modBus);
         ModParticles.PARTICLE_TYPES.register(modBus);
@@ -32,6 +32,13 @@ public class Caffeinated {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
 
+        });
+    }
+
+
+    public static ResourceLocation getId(String id) {
+        return new ResourceLocation(MODID, id);
     }
 }
