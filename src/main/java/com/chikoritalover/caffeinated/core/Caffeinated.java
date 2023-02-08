@@ -29,6 +29,7 @@ public class Caffeinated {
         ModBlocks.BLOCKS.register(modBus);
         ModItems.ITEMS.register(modBus);
         ModEffects.MOB_EFFECTS.register(modBus);
+        ModBannerPattern.BANNER_PATTERNS.register(modBus);
         ModSounds.SOUND_EVENTS.register(modBus);
         ModParticles.PARTICLE_TYPES.register(modBus);
 

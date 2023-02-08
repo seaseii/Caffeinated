@@ -1,4 +1,4 @@
-package com.chikoritalover.caffeinated.core.data;
+package com.chikoritalover.caffeinated.core.data.client;
 
 import com.chikoritalover.caffeinated.core.Caffeinated;
 import com.chikoritalover.caffeinated.core.registry.ModItems;
