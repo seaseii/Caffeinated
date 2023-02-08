@@ -13,12 +13,10 @@
   "result": {
     "item": "caffeinated:coffee_berry_crate"
   },
-  "fabric:load_conditions": [
+  "conditions": [
     {
-      "condition": "fabric:any_mod_loaded",
-      "values": [
-        "farmersdelight"
-      ]
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
     }
   ]
 }

@@ -5,6 +5,7 @@ import com.chikoritalover.caffeinated.common.block.CoffeeShrubBlock;
 import com.chikoritalover.caffeinated.common.block.FloweringCoffeeShrubBlock;
 import com.chikoritalover.caffeinated.common.block.GroundCoffeeCauldronBlock;
 import com.chikoritalover.caffeinated.core.Caffeinated;
+import com.chikoritalover.caffeinated.core.integration.farmersdelight.FDTab;
 import com.chikoritalover.caffeinated.core.misc.ModCauldronInteraction;
 import com.chikoritalover.caffeinated.core.misc.ModSoundTypes;
 import net.minecraft.world.item.BlockItem;
@@ -26,6 +27,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COFFEE_BEAN_BLOCK = register("coffee_bean_block", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.PODZOL).sound(ModSoundTypes.COFFEE_BEAN_BLOCK).strength(1.8F, 3.0F)), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> GROUND_COFFEE_BLOCK = register("ground_coffee_block", () -> new SandBlock(8473899, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.PODZOL).strength(0.5F).sound(ModSoundTypes.GROUND_COFFEE_BLOCK)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> COFFEE_BERRY_CRATE = register("coffee_berry_crate", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(2.0F, 3.0F)), FDTab.getFDItemTab());
 
     public static final RegistryObject<Block> COFFEE_CAULDRON = BLOCKS.register("coffee_cauldron", () -> new CoffeeCauldronBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON), ModCauldronInteraction.COFFEE));
     public static final RegistryObject<Block> GROUND_COFFEE_CAULDRON = BLOCKS.register("ground_coffee_cauldron", () -> new GroundCoffeeCauldronBlock(BlockBehaviour.Properties.copy(Blocks.CAULDRON).randomTicks()));

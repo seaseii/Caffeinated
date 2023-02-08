@@ -13,5 +13,11 @@
   "recipe_book_tab": "drinks",
   "result": {
     "item": "caffeinated:coffee_bottle"
-  }
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ]
 }
