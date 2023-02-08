@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_jungle",
+  "features": "caffeinated:patch_coffee_shrub",
+  "step": "vegetal_decoration"
+}
