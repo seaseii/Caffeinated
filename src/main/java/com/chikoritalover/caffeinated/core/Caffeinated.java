@@ -4,8 +4,12 @@ import com.chikoritalover.caffeinated.core.misc.ModCauldronInteraction;
 import com.chikoritalover.caffeinated.core.misc.ModCompostables;
 import com.chikoritalover.caffeinated.core.registry.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.npc.VillagerProfession;
+import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.village.VillagerTradesEvent;
+import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -39,7 +43,6 @@ public class Caffeinated {
             ModCauldronInteraction.register();
         });
     }
-
 
     public static ResourceLocation getId(String id) {
         return new ResourceLocation(MODID, id);
