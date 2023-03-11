@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[43,)"
-license="All rights reserved"
+license="All Rights Reserved"
 
 [[mods]]
 modId="caffeinated"
@@ -8,10 +8,10 @@ version="${file.jarVersion}"
 displayName="Caffeinated"
 logoFile="icon.png"
 credits="Ported by ExDrill"
-authors="Chikorita Lover and ExDrill"
+authors="Chikorita Lover"
 
 description='''
-A mod adding Coffee!
+Adds new coffee shrubs and items that provide a new caffeine effect.
 '''
 
 [[dependencies.caffeinated]]
@@ -20,7 +20,6 @@ A mod adding Coffee!
     versionRange="[43,)"
     ordering="NONE"
     side="BOTH"
-# Here's another dependency
 [[dependencies.caffeinated]]
     modId="minecraft"
     mandatory=true

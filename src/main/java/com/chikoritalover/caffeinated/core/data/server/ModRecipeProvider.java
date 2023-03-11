@@ -42,7 +42,11 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.COFFEE_BEANS.get()), has(ModItems.COFFEE_BEANS.get()))
                 .save(exporter, createId("ground_coffee_from_coffee_beans"));
 
-        // add in java pattern here
+        ShapelessRecipeBuilder.shapeless(ModItems.JAVA_BANNER_PATTERN.get())
+                .requires(Items.PAPER)
+                .requires(ModItems.COFFEE_BOTTLE.get())
+                .unlockedBy(getHasName(ModItems.COFFEE_BOTTLE.get()), has(ModItems.COFFEE_BOTTLE.get()))
+                .save(exporter);
 
         ShapedRecipeBuilder.shaped(ModItems.TIRAMISU.get(), 2)
                 .define('#', ModItems.COFFEE_BOTTLE.get())

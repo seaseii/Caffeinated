@@ -1,0 +1,10 @@
+{
+  "type": "caffeinated:append_loot_table",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/jungle_temple"
+    }
+  ],
+  "injected_loot": "caffeinated:chests/inject_jungle_temple"
+}

@@ -5,6 +5,8 @@
   "minVersion": "0.8",
   "refmap": "caffeinated.refmap.json",
   "mixins": [
+    "BeeGrowsCropGoalMixin",
+    "ItemStackMixin",
     "PlayerMixin"
   ],
   "injectors": {

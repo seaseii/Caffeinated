@@ -25,5 +25,6 @@ public class CaffeinatedClient {
     public static void clientSetup(final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.COFFEE_SHRUB.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.FLOWERING_COFFEE_SHRUB.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.POTTED_COFFEE_SHRUB.get(), RenderType.cutout());
     }
 }

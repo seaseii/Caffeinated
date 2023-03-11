@@ -17,5 +17,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         this.basicItem(ModItems.COFFEE_BERRIES.get());
         this.basicItem(ModItems.COFFEE_BOTTLE.get());
         this.basicItem(ModItems.TIRAMISU.get());
+        this.basicItem(ModItems.JAVA_BANNER_PATTERN.get());
     }
 }

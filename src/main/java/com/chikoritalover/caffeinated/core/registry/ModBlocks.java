@@ -35,6 +35,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> COFFEE_SHRUB = BLOCKS.register("coffee_shrub", () -> new CoffeeShrubBlock(BlockBehaviour.Properties.of(Material.PLANT).randomTicks().noCollission().sound(SoundType.AZALEA)));
     public static final RegistryObject<Block> FLOWERING_COFFEE_SHRUB = BLOCKS.register("flowering_coffee_shrub", () ->new FloweringCoffeeShrubBlock(BlockBehaviour.Properties.of(Material.PLANT).randomTicks().noCollission().sound(SoundType.FLOWERING_AZALEA)));
 
+    public static final RegistryObject<Block> POTTED_COFFEE_SHRUB = BLOCKS.register("potted_coffee_shrub", () -> new FlowerPotBlock(COFFEE_SHRUB.get(), BlockBehaviour.Properties.copy(Blocks.FLOWER_POT)));
+
     public static RegistryObject<Block> register(String id, Supplier<Block> blockSupplier, CreativeModeTab creativeModeTab) {
         var returnBlock = BLOCKS.register(id, blockSupplier);
         registerItem(id, returnBlock, creativeModeTab);
